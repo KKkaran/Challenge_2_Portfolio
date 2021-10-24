@@ -89,8 +89,8 @@ header {
 .bio-section p {
   font-size: 30px;
 }
-p{
-    font-size: 40px;
+p {
+  font-size: 40px;
 }
 .name:hover {
   background-color: whitesmoke;
@@ -118,9 +118,7 @@ p{
   .navbar-links a {
     padding: 0.5rem 1rem;
   }
-  .navbar-links.active{
-      display: flex;
-  }
-
+  .navbar-links.active {
+    display: flex;
   }
 }
