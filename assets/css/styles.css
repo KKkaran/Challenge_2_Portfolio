@@ -117,8 +117,23 @@ p {
 }
 
 /**contact styling begins here**/
+.contact-flex-container {
+  border: 1px solid goldenrod;
+  align-items: center;
+  justify-content: space-around;
+  height: 73vh;
+}
+.contact-flex-container h2 {
+  font-size: 42px;
+  margin-top: 10px;
+  padding: 20px;
+  border-bottom: 3px solid aqua;
+}
+.contact-flex-container p {
+  color: aqua;
+  font-size: 20px;
+}
 .form-contact {
-  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -142,6 +157,14 @@ textarea {
   background-color: #e31b6d;
   color: white;
 }
+
+/**FOOTER STYLING**/
+footer {
+  border: 1px solid red;
+  text-align: center;
+  height: 15vh;
+}
+
 /***MEDIA QUERIES GO HERE!!!***/
 @media (max-width: 940px) {
   .hamburger-menu {
@@ -179,5 +202,11 @@ textarea {
     margin-bottom: 20px;
     padding: 10px;
     width: 100%;
+  }
+  .contact-flex-container p {
+    font-size: 15px;
+  }
+  .contact-flex-container h2 {
+    font-size: 35px;
   }
 }
