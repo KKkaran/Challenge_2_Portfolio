@@ -12,11 +12,12 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  background-color: #adc2a9;
-  color: black;
+  background-color: #1b242f;
+  color: white;
   align-items: center;
   position: sticky;
   top: 0;
+  border-bottom: 1px solid white;
 }
 .name {
   font-size: 42px;
@@ -37,7 +38,7 @@ header {
 .bar {
   height: 6px;
   width: 100%;
-  background-color: black;
+  background-color: white;
   border-radius: 10px;
 }
 
@@ -52,13 +53,13 @@ header {
 }
 .navbar-links a {
   text-decoration: none;
-  color: black;
+  color: white;
   display: block;
   padding: 1.8rem;
   font-weight: bolder;
 }
-.navbar-links li:hover {
-  background-color: #555;
+.navbar-links li a:hover {
+  color: #e31b6d;
 }
 .navbar {
   display: flex;
@@ -66,6 +67,9 @@ header {
   background-color: grey;
   height: 15px;
   width: 20px;
+}
+.navbar-links li:active {
+  color: green;
 }
 
 /**SECTIONS STYLING BEGINS HERE!!***/
@@ -75,8 +79,19 @@ header {
 .abt-me-flex-container {
   display: flex;
   padding: 20px;
+
   justify-content: space-between;
 }
+.abt-me-flex-container,
+.work-flex-container,
+.contact-flex-container,
+.resume-flex-container {
+  height: 88vh;
+  margin-bottom: 10px;
+  scroll-margin-top: 95px;
+  border: 1px solid white;
+}
+
 .bio-section {
   display: flex;
   flex-direction: column;
@@ -92,9 +107,7 @@ header {
 p {
   font-size: 40px;
 }
-.name:hover {
-  background-color: whitesmoke;
-}
+
 /***MEDIA QUERIES GO HERE!!!***/
 @media (max-width: 940px) {
   .hamburger-menu {
