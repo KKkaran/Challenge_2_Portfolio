@@ -1,3 +1,6 @@
+:root {
+  --header-size: ;
+}
 * {
   padding: 0;
   margin: 0;
@@ -90,6 +93,11 @@ header {
   margin-bottom: 10px;
   scroll-margin-top: 95px;
   border: 1px solid white;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  background-color: #1b242f;
+  color: white;
 }
 
 .bio-section {
@@ -108,6 +116,32 @@ p {
   font-size: 40px;
 }
 
+/**contact styling begins here**/
+.form-contact {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.form-contact input,
+textarea {
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 410px;
+  display: block;
+}
+.form-container {
+  text-align: center;
+}
+.submit {
+  font-size: 20px;
+  padding: 5px 20px 5px 20px;
+  border: none;
+}
+.submit:hover {
+  background-color: #e31b6d;
+  color: white;
+}
 /***MEDIA QUERIES GO HERE!!!***/
 @media (max-width: 940px) {
   .hamburger-menu {
@@ -133,5 +167,17 @@ p {
   }
   .navbar-links.active {
     display: flex;
+  }
+}
+@media (max-width: 610px) {
+  .form-container {
+    width: 80%;
+  }
+
+  .form-contact input,
+  textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
   }
 }
