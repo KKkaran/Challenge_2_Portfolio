@@ -77,12 +77,10 @@ header {
 
 /**SECTIONS STYLING BEGINS HERE!!***/
 .flex-sections {
-  margin: 15px;
 }
 .abt-me-flex-container {
   display: flex;
   padding: 20px;
-
   justify-content: space-between;
 }
 .abt-me-flex-container,
@@ -90,9 +88,7 @@ header {
 .contact-flex-container,
 .resume-flex-container {
   height: 88vh;
-  margin-bottom: 10px;
   scroll-margin-top: 95px;
-  border: 1px solid white;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -118,9 +114,9 @@ p {
 
 /**contact styling begins here**/
 .contact-flex-container {
-  border: 1px solid goldenrod;
   align-items: center;
   justify-content: space-around;
+  background-color: #373753;
   height: 73vh;
 }
 .contact-flex-container h2 {
@@ -160,11 +156,23 @@ textarea {
 
 /**FOOTER STYLING**/
 footer {
-  border: 1px solid red;
   text-align: center;
   height: 15vh;
+  background-color: #30305a;
 }
 
+.fa {
+  padding: 20px;
+  color: red;
+  text-shadow: 2px 2px 4px #000000;
+}
+footer p {
+  color: grey;
+  font-size: 20px;
+}
+footer span {
+  color: red;
+}
 /***MEDIA QUERIES GO HERE!!!***/
 @media (max-width: 940px) {
   .hamburger-menu {
