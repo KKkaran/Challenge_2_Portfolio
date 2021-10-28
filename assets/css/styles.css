@@ -99,7 +99,38 @@ header {
   padding: 20px;
   justify-content: space-between;
 }
-.work-flex-container,
+
+/**WORK SECTION STYLING!!!**/
+.work-flex-container h2 {
+  font-size: 35px;
+  text-align: right;
+  flex-basis: 13%;
+}
+.work-images {
+  display: flex;
+  justify-content: space-between;
+  background: #e2eaf4;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+.work-images > * {
+  flex: 1 1 100%;
+  border: 2px solid blue;
+  text-align: center;
+}
+
+.image1,
+.smallImg {
+  width: 300px;
+  height: 300px;
+  margin: 50px;
+}
+.work-flex-container {
+  scroll-margin-top: 95px;
+  display: flex;
+}
+
+/**WORK SECTION STYLING ENDS HERE!!!***/
 .contact-flex-container,
 .resume-flex-container {
   height: 88vh;
@@ -130,6 +161,7 @@ header {
   text-align: right;
   flex: 1;
 }
+
 .bio-section span {
   display: block;
   color: chocolate;
