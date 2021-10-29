@@ -99,37 +99,89 @@ header {
   padding: 20px;
   justify-content: space-between;
 }
-
-/**WORK SECTION STYLING!!!**/
-.work-flex-container h2 {
+/**about me styling goes here**/
+.bio-section,
+.work-section {
+  display: flex;
+  color: aliceblue;
+  scroll-margin-top: 95px;
+  justify-content: space-around;
+  height: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  flex: 1;
+}
+.bio-section h2,
+.work-section h2 {
   font-size: 35px;
   text-align: right;
-  flex-basis: 13%;
+  flex: 1;
 }
+
+.bio-section span,
+.work-section span {
+  display: block;
+  color: chocolate;
+  margin: 5px;
+}
+.bio-in-bio,
+.work-images:first-child {
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  text-align: right;
+  width: 75%;
+  margin: 5px;
+}
+.image_plus_bio,
 .work-images {
   display: flex;
-  justify-content: space-between;
-  background: #e2eaf4;
-  padding: 10px;
+  flex: 8;
+  text-align: center;
+}
+.vertical-border {
+  width: 8px;
+  height: 250px;
+  background-color: #99a799;
+  margin: 0 10px 0 10px;
+  border-radius: 10px;
+}
+
+/***/
+
+/**WORK SECTION STYLING!!!**/
+
+.work-flex-container h2 {
+  color: #b7d607;
+}
+
+.work-images {
   flex-wrap: wrap;
 }
 .work-images > * {
   flex: 1 1 100%;
-  border: 2px solid blue;
-  text-align: center;
+  padding: 30px;
 }
 
-.image1,
-.smallImg {
-  width: 300px;
-  height: 300px;
-  margin: 50px;
-}
-.work-flex-container {
-  scroll-margin-top: 95px;
+.row-images {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.smallImg {
+  max-width: 100%;
+  height: 300px;
+  width: 40%;
+}
+.bigimage {
+  max-width: 100%;
+  height: 600px;
+  width: 90%;
 }
 
+.work-section span {
+  height: 1400px;
+}
 /**WORK SECTION STYLING ENDS HERE!!!***/
 .contact-flex-container,
 .resume-flex-container {
@@ -145,47 +197,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.bio-section {
-  display: flex;
-  color: aliceblue;
-  scroll-margin-top: 95px;
-  justify-content: space-around;
-  height: 100%;
-  margin-top: 10px;
-  padding: 10px;
-  flex: 1;
-}
-.bio-section h2 {
-  font-size: 35px;
-  text-align: right;
-  flex: 1;
-}
-
-.bio-section span {
-  display: block;
-  color: chocolate;
-  margin: 5px;
-}
-.bio-in-bio {
-  font-size: 25px;
-  display: flex;
-  justify-content: center;
-  text-align: right;
-  width: 75%;
-  margin: 5px;
-}
-.image_plus_bio {
-  display: flex;
-  flex: 8;
-  text-align: center;
-}
-.vertical-border {
-  width: 8px;
-  height: 250px;
-  background-color: #99a799;
-  margin: 0 10px 0 10px;
-  border-radius: 10px;
 }
 
 /**contact styling begins here**/
@@ -277,8 +288,9 @@ footer span {
     display: flex;
   }
 }
-@media (max-width: 850px) {
-  .bio-section {
+@media (max-width: 920px) {
+  .bio-section,
+  .work-section {
     width: 85%;
     flex-direction: column;
     align-items: center;
@@ -294,7 +306,8 @@ footer span {
     color: chocolate;
     display: inline-block;
   }
-  .bio-section > span {
+  .bio-section > span,
+  .work-section > span {
     height: 5px;
     width: 300px;
     background: #99a799;
@@ -326,6 +339,11 @@ footer span {
     width: 400px;
     margin: 10px;
     text-align: center;
+  }
+  .smallImg,
+  .bigimage {
+    height: 400px;
+    width: 350px;
   }
 }
 @media (max-width: 610px) {
