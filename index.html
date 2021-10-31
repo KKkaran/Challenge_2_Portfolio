@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karan Sodhi</title>
+    <title>Karan Sodhi - Portfolio</title>
+    <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 
@@ -21,6 +22,8 @@
             <span class="bar"></span>
         </a>
 
+        <!--this section is displayed until the user screen turns small and
+        is presented with a hamburger menu instead-->
         <nav class="navbar-links">
             <ul>
                 <li>
@@ -32,9 +35,7 @@
                 <li>
                     <a href="#contact" id="contact1">Contact Me</a>
                 </li>
-                <li>
-                    <a href="#resume" id="resume1">Resume</a>
-                </li>
+            
             </ul>
         </nav>
     
@@ -57,7 +58,8 @@
         <div class="bio-section" id="aboutme">
                 
                 <h2>About <span>ME</span></h2>
-                
+                <!--this span is a vertical border differntiates the content 
+                from their respective heading-->
                 <span class="vertical-border bio">
 
                 </span>
@@ -83,54 +85,57 @@
         </div>
         
         
-        
+        <!--This section lists all the projects and when clicked 
+        it takes the client to external page-->
         <article class="work-section" id="work">
             
             <h2>Work</h2>
                 
             <span class="vertical-border work"></span>
 
-            <div class="work-images">
+            <div class="work-images" >
 
-                <div style="max-width: 1300px;">
-                    <img src="assets/image/raspberry.png" alt="image1" class="bigimage" >
+                <div style="max-width: 1300px;" class="bigImage">
+                    <a href="./linkToWork.html">
+                        <img src="assets/image/raspberry.png" alt="image1" class="bigimage" >
+                        
+                    </a>
                 </div>
 
-                <div class="row-images" >
-                    <img src="assets/image/calculator.jpg" alt="image1" class="smallImg" height="350" max-width="400" >
-                    <img src="assets/image/runbuddy.png" alt="image1" class="smallImg" height="350" max-width="400">
+                <div class="row-images" id="first-row">
+                    <a href="./linkToWork.html" >
+                        <img src="assets/image/calculator.jpg" alt="image1" class="smallImg" height="350" width="400" >
+                    </a>
+                    <a href="https://kkkaran.github.io/RunBuddy2.0/">
+                        <img src="assets/image/runbuddy.png" alt="image1" class="smallImg" height="350" width="400">
+                    </a>
+                    
                 </div>
 
                 <div class="row-images" style=" border:2 px solid white">
-                    <img src="assets/image/blog.jpg" alt="image1" class="smallImg" height="350" width="300">
-                    <img src="assets/image/AI.jpg" alt="image1" class="smallImg" height="350" width="400"> 
+                    <a href="./linkToWork.html">
+                        <img src="assets/image/blog.jpg" alt="image1" class="smallImg" height="350"width="400">
+                    </a>
+                    
+                    <a href="./linkToWork.html">
+                        <img src="assets/image/AI.jpg" alt="image1" class="smallImg" height="350"width="400"> 
+                    </a>
+                    
                  
                 </div>
           
             </div>
 
-        </article> 
+        </article>
 
-        
-        <!--
-        <article class="resume-flex-container" id="resume">
-            <h2>RESUME</h2>
-            <p>
-                With these points in mind, in this Challenge you’ll set 
-                yourself up for future success by applying the core skills
-                you've recently learned: flexbox, media queries, and CSS
-                variables. You'll get to practice your new skills while 
-                creating something that you'll use during your job search. 
-                It’s a win-win that you'll likely be grateful for in the future!
-            </p>
-        </article> -->
-
-        <article class="contact-flex-container" id="contact"><!--contact-me segment-->
+        <!--contact-me segment-->
+        <article class="contact-flex-container" id="contact">
             <h2>CONTACT</h2>
             <div></div>
             <p>Have a question or want to work together?</p>
             
-            
+            <!--Form where clients give their info and the user gets back to them
+            Not funtional only for display-->
             <form action="" class="form-container form-contact">
                 <input type="text" placeholder="Name">
                 <input type="email" placeholder="email">
@@ -143,10 +148,9 @@
 
     <!--footer section starts here-->
     <footer>
-        
-        
-
         <div class="social-icons">
+            <!--List of the social apps icons, currently no link working on them
+                  Just for display!!-->
             <i class="fa fa-facebook" style="font-size: 32px;" ></i>
             <i class="fa fa-twitter" style="font-size: 32px;" ></i>
             <i class="fa fa-instagram" style="font-size: 32px;" ></i>
@@ -156,6 +160,7 @@
         <p>KARAN SODHI <span>©</span></p>
     </footer>
 
+    <!--Link to the external js file-->
     <script src="assets/js/index.js"></script>
 </body>
 </html>
