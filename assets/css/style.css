@@ -1,0 +1,10 @@
+.image_plus_bios img {
+  border-radius: 20px;
+}
+
+@media (max-width: 576px) {
+  .image_plus_bios img {
+    height: 334px;
+    width: 318px;
+  }
+}
